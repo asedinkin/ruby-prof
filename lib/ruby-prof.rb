@@ -14,7 +14,8 @@ module RubyProf
   lib_dir = File.dirname(__FILE__) + '/ruby-prof/'
   
   for file in ['abstract_printer', 'aggregate_call_info', 'flat_printer', 'flat_printer_with_line_numbers', 
-    'graph_printer', 'graph_html_printer', 'call_tree_printer', 'call_stack_printer', 'multi_printer', 'dot_printer']
+    'graph_printer', 'graph_html_printer', 'call_tree_printer', 'call_stack_printer', 'multi_printer', 'dot_printer',
+    'call_tree_printer_without_aggregation', 'graph_printer_without_aggregation']
     autoload camelcase(file), lib_dir + file
   end
 
